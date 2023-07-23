@@ -2,25 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    html {
+      font-family: tektur, sans-serif;
+    }
+  }
+
+/* LAVA BUBBLES */
 .blobb {
     fill: url(#lavaGradient);
-  }
-  
-  .glow {
+}
+
+.glow {
     filter: url(#glowing);
-  }
-  
-  .metasvg {
+}
+
+.metasvg {
     position: fixed;
     height: 110vh;
     width: 110vw;
     top: -20px;
     left: -20px;
     overflow: hidden;
-  }
-  
-  .metaballs {
+}
+
+.metaballs {
     position: fixed;
-    z-index: 1;  
+    z-index: 1;
     overflow: hidden;
-  }
+}
+
+/* LAVA BUBBLES END*/

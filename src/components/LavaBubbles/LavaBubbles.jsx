@@ -5,13 +5,23 @@ function LavaBubbles() {
     const circle3Ref = useRef();
     const circle4Ref = useRef();
     const circle5Ref = useRef();
+    const circle6Ref = useRef();
+    const circle7Ref = useRef();
+    const circle8Ref = useRef();
+    const circle9Ref = useRef();
+    const circle10Ref = useRef();
 
     const [circles, setCircles] = useState({
-        circle1: { x: 400, y: 200, xSpeed: 0.2, ySpeed: 0.34, radius: Math.random() * 200},
-        circle2: { x: 600, y: 400, xSpeed: -0.5, ySpeed: 0.5, radius: Math.random() * 200},
-        circle3: { x: 800, y: 600, xSpeed: 0.3, ySpeed: 0.6, radius: Math.random() * 200},
-        circle4: { x: 1000, y: 500, xSpeed: -0.1, ySpeed: 0.6, radius: Math.random() * 200},
-        circle5: { x: 900, y: 300, xSpeed: -0.2, ySpeed: 0.3, radius: Math.random() * 200},
+        circle1: {x: Math.random()*1000 ,y: Math.random()*1000, xSpeed: 0.2, ySpeed: 0.34, radius: Math.random() * 150+50 },
+        circle2: {x: Math.random()*1000,y: Math.random()*1000, xSpeed: -0.5, ySpeed: 0.5, radius: Math.random() * 100+40 },
+        circle3: {x: Math.random()*1000,y: Math.random()*1000, xSpeed: 0.3, ySpeed: 0.6, radius: Math.random() * 130+40 },
+        circle4: {x: Math.random()*1000,y: Math.random()*1000, xSpeed: -0.1, ySpeed: 0.6, radius: Math.random() * 120+30 },
+        circle5: {x: Math.random()*1000,y: Math.random()*1000, xSpeed: -0.2, ySpeed: 0.3, radius: Math.random() * 150+40 },
+        circle6: {x: Math.random()*1000,y: Math.random()*1000, xSpeed: -0.6, ySpeed: 0.3, radius: Math.random() * 180+20 },
+        circle7: {x: Math.random()*1000,y: Math.random()*1000, xSpeed: 0.7, ySpeed: 0.31, radius: Math.random() * 180+30 },
+        circle8: {x: Math.random()*1000,y: Math.random()*1000, xSpeed: -0.1, ySpeed: 0.5, radius: Math.random() * 110+40 },
+        circle9: {x: Math.random()*1000,y: Math.random()*1000, xSpeed: -0.8, ySpeed: 0.2, radius: Math.random() * 180+20 },
+        circle10: {x: Math.random()*1000,y: Math.random()*1000, xSpeed: 0.2, ySpeed: 0.1, radius: Math.random() * 180+20 },
     });
 
     const bounds = {
@@ -70,8 +80,8 @@ function LavaBubbles() {
                         </filter>
 
                         <linearGradient id="lavaGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                            <stop offset="0%" stopColor="#0011ff" />
-                            <stop offset="100%" stopColor="#0ca6ee" />
+                            <stop offset="0%" stopColor="#0ca6ee" />
+                            <stop offset="100%" stopColor="#0011ff" />
                         </linearGradient>
                     </defs>
 
@@ -82,24 +92,21 @@ function LavaBubbles() {
                             ref={circle1Ref}
                             cx={circles.circle1.x}
                             cy={circles.circle1.y}
-                            r={circles.circle1.radius}
-                        />
+                            r={circles.circle1.radius} />
                         <circle
                             className="blobb glow"
                             fill="url(#lavaGradient)"
                             ref={circle2Ref}
                             cx={circles.circle2.x}
                             cy={circles.circle2.y}
-                            r={circles.circle2.radius}
-                        />
+                            r={circles.circle2.radius} />
                         <circle
                             className="blobb glow"
                             fill="url(#lavaGradient)"
                             ref={circle3Ref}
                             cx={circles.circle3.x}
                             cy={circles.circle3.y}
-                            r={circles.circle3.radius}
-                        />
+                            r={circles.circle3.radius} />
                         <circle
                             className="blobb glow"
                             fill="url(#lavaGradient)"
@@ -114,8 +121,42 @@ function LavaBubbles() {
                             ref={circle5Ref}
                             cx={circles.circle5.x}
                             cy={circles.circle5.y}
-                            r={circles.circle5.radius}
-                        />
+                            r={circles.circle5.radius} />
+                        <circle
+                            className="blobb glow"
+                            fill="url(#lavaGradient)"
+                            ref={circle6Ref}
+                            cx={circles.circle6.x}
+                            cy={circles.circle6.y}
+                            r={circles.circle6.radius} />
+                        <circle
+                            className="blobb glow"
+                            fill="url(#lavaGradient)"
+                            ref={circle7Ref}
+                            cx={circles.circle7.x}
+                            cy={circles.circle7.y}
+                            r={circles.circle7.radius} />
+                        <circle
+                            className="blobb glow"
+                            fill="url(#lavaGradient)"
+                            ref={circle8Ref}
+                            cx={circles.circle8.x}
+                            cy={circles.circle8.y}
+                            r={circles.circle8.radius} />
+                        <circle
+                            className="blobb glow"
+                            fill="url(#lavaGradient)"
+                            ref={circle9Ref}
+                            cx={circles.circle9.x}
+                            cy={circles.circle9.y}
+                            r={circles.circle9.radius} />
+                        <circle
+                            className="blobb glow"
+                            fill="url(#lavaGradient)"
+                            ref={circle10Ref}
+                            cx={circles.circle10.x}
+                            cy={circles.circle10.y}
+                            r={circles.circle10.radius} />
                     </g>
                 </svg>
             </div>
