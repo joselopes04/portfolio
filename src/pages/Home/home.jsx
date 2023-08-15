@@ -1,6 +1,7 @@
 import React from 'react';
 import LavaBubbles from '../../components/LavaBubbles/LavaBubbles';
 import { BsArrowDown } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -22,7 +23,11 @@ const Home = () => {
                     <img className="h-64 rounded-3xl transition-all hover:skew-y-12 shadow-2xl" src={process.env.PUBLIC_URL + '/images/eu.jpg'} alt="José T. Lopes" />
                 </div>
 
-                <button className="absolute flex items-center bottom-1 p-3 rounded-2xl text-slate-950 bg-gradient-to-br from-cyan-500 to-blue-500 hover:from-green-500 hover:to-emerald-700 select-none animate-bounce transition-transform z-10">Discover more<BsArrowDown/></button>
+                <Link className='absolute bottom-1 group z-10' to={"/main"}>
+                    <button className="flex items-center p-3 rounded-2xl text-slate-950 bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-green-400 group-hover:to-emerald-600 select-none animate-bounce transition-transform">
+                        Discover more<BsArrowDown />
+                    </button>
+                </Link>
 
             </main>
 
