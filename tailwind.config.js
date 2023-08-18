@@ -4,6 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'console-red': '#ff5953',
+        'console-yellow': '#e6c02a',
+        'console-green': '#53c22b',
       },
     },
   },

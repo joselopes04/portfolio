@@ -21,7 +21,6 @@ const ConsoleAnimation = ({ words, classes }) => {
                     }
                     return 1;
                 } else if (prevLetterCount === currentWord.length + 1 || deleting === true) {
-                    console.log("apagar")
                     setDeleting(true);
                     return prevLetterCount - 1; //Delete letters
                 } else if (!deleting) {

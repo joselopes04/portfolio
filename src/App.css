@@ -8,6 +8,11 @@
     }
   }
 
+  @font-face {
+	font-family: matrixFont;
+	src: url(./matrixFont.ttf);
+}
+
 /* LAVA BUBBLES */
 .blobb {
     fill: url(#lavaGradient);
@@ -31,5 +36,4 @@
     z-index: 1;
     overflow: hidden;
 }
-
 /* LAVA BUBBLES END*/
