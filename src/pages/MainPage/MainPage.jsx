@@ -15,9 +15,9 @@ const MainPage = () => {
                     Home Page <BsArrowUp/>
                 </button>
             </Link>
-            <Link className='absolute left-5 group z-10' to={"/"}>
+            <Link className='absolute left-5 group z-10' to={"/stats"}>
                 <button className="flex items-center p-3  rounded-2xl  text-slate-950 z-10 bg-gradient-to-br from-green-200 to-emerald-500 group-hover:from-cyan-500 group-hover:to-blue-500 select-none transition-transform">
-                    <BsArrowLeft  className='mr-1'/> Skills
+                    <BsArrowLeft  className='mr-1'/> Stats
                 </button>
             </Link>
             <Link className='absolute right-5 group z-10' to={"/"}>

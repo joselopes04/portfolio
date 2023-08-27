@@ -20,7 +20,7 @@ const Home = () => {
                 </div>
 
                 <div className="ml-16 relative z-10">
-                    <img className="h-64 rounded-3xl transition-all hover:skew-y-12 shadow-2xl" src={process.env.PUBLIC_URL + '/images/eu.jpg'} alt="José T. Lopes" />
+                    <img className="h-64 rounded-3xl transition-all hover:skew-y-12 shadow-2xl select-none" src={process.env.PUBLIC_URL + '/images/eu.jpg'} alt="José T. Lopes" />
                 </div>
 
                 <Link className='absolute bottom-1 group z-10' to={"/main"}>
