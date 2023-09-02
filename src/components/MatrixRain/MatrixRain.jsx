@@ -128,7 +128,7 @@ const MatrixRain = props => {
 	return (
 		<div
 			style={{
-				background: 'black',
+				background: 'rgb(2 6 23)',
 				position: 'fixed',
 				top: 0,
 				left: 0,

@@ -25,13 +25,13 @@ const MainPage = () => {
                     Carreer Timeline <BsArrowRight className='ml-1'/>
                 </button>
             </Link>
-            <Link className='absolute bottom-5 group z-10' to={"/"}>
+            <Link className='absolute bottom-5 group z-10' to={"/projects"}>
                 <button className="flex items-center p-3 rounded-2xl text-slate-950 z-10 bg-gradient-to-br from-green-200 to-emerald-500 group-hover:from-cyan-500 group-hover:to-blue-500 select-none transition-transform">
                     Projects <BsArrowDown />
                 </button>
             </Link>
             <MatrixRain />
-            <div className='z-10 bg-slate-950 w-1/3 h-1/3 rounded-lg'>
+            <div className='z-10 bg-black w-1/3 h-1/3 rounded-lg'>
                 <div className='h-6 bg-white rounded-t-lg relative'>
                     <p className='text-center select-none text-slate-950'>Terminal</p>
                     <BsFillCircleFill className='absolute top-1 left-1 text-console-red' size={18} /> 
