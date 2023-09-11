@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.65f78ac7.css",
+    "main.js": "/static/js/main.e78f4e0e.js",
+    "static/media/matrixFont.ttf": "/static/media/matrixFont.77b36b5eb15b0d99bd9a.ttf",
+    "index.html": "/index.html",
+    "main.65f78ac7.css.map": "/static/css/main.65f78ac7.css.map",
+    "main.e78f4e0e.js.map": "/static/js/main.e78f4e0e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.65f78ac7.css",
+    "static/js/main.e78f4e0e.js"
+  ]
+}
