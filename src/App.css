@@ -6,11 +6,16 @@
     html {
       font-family: tektur, sans-serif;
     }
-  }
 
-  @font-face {
-	font-family: matrixFont;
-	src: url(./matrixFont.ttf);
+    .button {
+        @apply flex items-center justify-center p-3 rounded-2xl text-slate-950 bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-green-400 group-hover:to-emerald-600 select-none;
+    }
+
+}
+
+@font-face {
+    font-family: matrixFont;
+    src: url(./matrixFont.ttf);
 }
 
 /* LAVA BUBBLES */
@@ -36,4 +41,5 @@
     z-index: 1;
     overflow: hidden;
 }
+
 /* LAVA BUBBLES END*/

@@ -8,26 +8,29 @@ const Home = () => {
     return (
         <>
             <LavaBubbles />
-            <main className="h-screen bg-gradient-to-br from-blue-700 to-slate-950 flex justify-center items-center">
+            <main className="flex justify-center h-screen bg-gradient-to-br from-blue-700 to-slate-950 ">
 
-                <div className="flex flex-col justify-center items-center text-white bg-slate-400 bg-opacity-20 p-4 rounded-lg transition-colors z-10 hover:bg-opacity-50">
-                    <div>
-                        <h5 className="text-sm select-none">Hello my name is ... </h5>
+                <div className='flex flex-col-reverse items-center justify-center h-full md:flex-row'>
+                    <div className="z-10 flex flex-col items-center justify-center p-4 mx-10 text-white transition-colors rounded-lg bg-slate-400 bg-opacity-20 sm:mx-0 hover:bg-opacity-50">
+                        <div>
+                            <h5 className="text-sm select-none">Hello my name is ... </h5>
+                        </div>
+                        <div>
+                            <h1 className="text-6xl text-center select-none">José T. Lopes</h1>
+                        </div>
                     </div>
-                    <div>
-                        <h1 className="text-6xl select-none">José T. Lopes</h1>
+
+                    <div className="relative z-10 mb-10 md:ml-16 md:mb-0">
+                        <img className="h-64 shadow-2xl select-none rounded-3xl" src={process.env.PUBLIC_URL + '/images/eu.jpg'} alt="José T. Lopes" />
                     </div>
                 </div>
 
-                <div className="ml-16 relative z-10">
-                    <img className="h-64 rounded-3xl shadow-2xl select-none" src={process.env.PUBLIC_URL + '/images/eu.jpg'} alt="José T. Lopes" />
-                </div>
-
-                <Link className='absolute bottom-1 group z-10' to={"/main"}>
-                    <button className="flex items-center p-3 rounded-2xl text-slate-950 bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-green-400 group-hover:to-emerald-600 select-none animate-bounce transition-transform">
+                <Link className='absolute z-10 bottom-1 group' to={"/main"}>
+                    <button className="transition-transform button animate-bounce">
                         Discover more<BsArrowDown />
                     </button>
                 </Link>
+
 
             </main>
 

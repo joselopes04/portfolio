@@ -11,27 +11,27 @@ const MainPage = () => {
     return (
         <main className='h-screen flex items-center justify-center'>
             <Link className='absolute top-5 group z-10' to={"/"}>
-                <button className="flex items-center p-3 rounded-2xl text-slate-950 z-10 bg-gradient-to-br from-green-200 to-emerald-500 group-hover:from-cyan-500 group-hover:to-blue-500 select-none transition-transform">
-                    Home Page <BsArrowUp/>
+                <button className="button w-28">
+                    Home<BsArrowUp/>
                 </button>
             </Link>
             <Link className='absolute left-5 group z-10' to={"/stats"}>
-                <button className="flex items-center p-3  rounded-2xl  text-slate-950 z-10 bg-gradient-to-br from-green-200 to-emerald-500 group-hover:from-cyan-500 group-hover:to-blue-500 select-none transition-transform">
-                    <BsArrowLeft  className='mr-1'/> Stats
+                <button className="button w-[6.5rem]">
+                    <BsArrowLeft className='mr-1'/> Stats
                 </button>
             </Link>
             <Link className='absolute right-5 group z-10' to={"/carreer"}>
-                <button className="flex items-center p-3 rounded-2xl text-slate-950 z-10 bg-gradient-to-br from-green-200 to-emerald-500 group-hover:from-cyan-500 group-hover:to-blue-500 select-none transition-transform">
-                    Carreer Timeline <BsArrowRight className='ml-1'/>
+                <button className="button w-[6.5rem]">
+                    Timeline <BsArrowRight className='ml-1'/>
                 </button>
             </Link>
             <Link className='absolute bottom-5 group z-10' to={"/projects"}>
-                <button className="flex items-center p-3 rounded-2xl text-slate-950 z-10 bg-gradient-to-br from-green-200 to-emerald-500 group-hover:from-cyan-500 group-hover:to-blue-500 select-none transition-transform">
+                <button className="button w-[6.5rem]">
                     Projects <BsArrowDown />
                 </button>
             </Link>
             <MatrixRain />
-            <div className='z-10 bg-black w-1/3 h-1/3 rounded-lg'>
+            <div className='z-10 bg-black w-1/3 h-1/3 rounded-lg hidden md:block'>
                 <div className='h-6 bg-white rounded-t-lg relative'>
                     <p className='text-center select-none text-slate-950'>Terminal</p>
                     <BsFillCircleFill className='absolute top-1 left-1 text-console-red' size={18} /> 
