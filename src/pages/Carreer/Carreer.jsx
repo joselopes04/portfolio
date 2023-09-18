@@ -16,7 +16,7 @@ const Carreer = () => {
             document.removeEventListener('keydown', handleKeyDown);
         };
     }, []);
-    
+
     return (
         <>
             <main className='flex flex-col min-h-screen bg-slate-950'>
@@ -34,9 +34,7 @@ const Carreer = () => {
                             <time className="mb-1 text-sm font-normal leading-none text-gray-200">August 2023 - Present</time>
                             <div className='grid grid-cols-12 gap-x-2'>
                                 <div className='flex col-span-1'>
-                                    <a href='https://www.dionamite.com/' target='_blank'>
-                                        <img className='w-14 ' src={process.env.PUBLIC_URL + '/images/companies/dionamite.svg'} alt="" />
-                                    </a>
+                                    <img className='cursor-pointer w-14 hover:brightness-75' src={process.env.PUBLIC_URL + '/images/companies/dionamite.svg'} alt="" onClick={() => window.open('https://www.dionamite.com/', '_blank')} />
                                 </div>
                                 <div className='flex flex-col justify-center col-span-11'>
                                     <h3 className="text-lg font-semibold text-white">Dionamite - Full-stack Developer - Fulltime</h3>
@@ -49,9 +47,7 @@ const Carreer = () => {
                             <time className="mb-1 text-sm font-normal leading-none text-gray-200">May 2023 - August 2023</time>
                             <div className='grid grid-cols-12 gap-x-2'>
                                 <div className='flex col-span-1'>
-                                    <a href='https://www.dionamite.com/' target='_blank'>
-                                        <img className='w-14' src={process.env.PUBLIC_URL + '/images/companies/dionamite.svg'} alt="" />
-                                    </a>
+                                    <img className='cursor-pointer w-14 hover:brightness-75' src={process.env.PUBLIC_URL + '/images/companies/dionamite.svg'} alt="" onClick={() => window.open('https://www.dionamite.com/', '_blank')} />
                                 </div>
                                 <div className='flex flex-col justify-center col-span-11'>
                                     <h3 className="text-lg font-semibold text-white">Dionamite - Full-stack Developer - Internship</h3>
@@ -64,10 +60,8 @@ const Carreer = () => {
                             <div className="absolute w-3 h-3 rounded-full mt-1.5 -left-1.5 border  border-gray-900 bg-gray-400"></div>
                             <time className="mb-1 text-sm font-normal leading-none text-gray-200">March 2022 - June 2022</time>
                             <div className='grid grid-cols-12 gap-x-2'>
-                                <div className='flex col-span-1'>
-                                    <a href='https://a2it.com/' target='_blank'>
-                                        <img className='object-contain w-14' src={process.env.PUBLIC_URL + '/images/companies/a2it.png'} alt="" />
-                                    </a>
+                                <div className='flex items-center col-span-1'>
+                                    <img className='object-contain cursor-pointer w-14 hover:brightness-75' src={process.env.PUBLIC_URL + '/images/companies/a2it.png'} alt="" onClick={() => window.open('https://a2it.com/', '_blank')} />
                                 </div>
                                 <div className='flex flex-col justify-center col-span-11'>
                                     <h3 className="text-lg font-semibold text-white">A2IT - Full-stack Developer - Internship</h3>
@@ -83,9 +77,7 @@ const Carreer = () => {
                             <time className="mb-1 text-sm font-normal leading-none text-white">July 2021 - August 2021</time>
                             <div className='grid grid-cols-12 gap-x-2'>
                                 <div className='flex col-span-1'>
-                                    <a href='https://www.epochmultimedia.com/' target='_blank'>
-                                        <img className='object-contain w-14' src={process.env.PUBLIC_URL + '/images/companies/epochMultimedia.png'} alt="" />
-                                    </a>
+                                    <img className='object-contain cursor-pointer w-14 hover:brightness-75' src={process.env.PUBLIC_URL + '/images/companies/epochMultimedia.png'} alt="" onClick={() => window.open('https://www.epochmultimedia.com/', '_blank')} />
                                 </div>
                                 <div className='flex flex-col justify-center col-span-11'>
                                     <h3 className="text-lg font-semibold text-white">Epoch Multimedia - Help Desk - Internship</h3>
@@ -105,10 +97,8 @@ const Carreer = () => {
                             <div className="absolute w-3 h-3 rounded-full mt-1.5 -left-1.5 border border-gray-900 bg-gray-400"></div>
                             <time className="mb-1 text-sm font-normal leading-none text-gray-200">October 2022 - August 2023</time>
                             <div className='grid grid-cols-12 gap-x-2'>
-                                <div className='flex col-span-1'>
-                                    <a href='https://www.citeforma.pt/' target='_blank'>
-                                        <img className='object-contain w-16' src={process.env.PUBLIC_URL + '/images/education/citeforma.png'} alt="" />
-                                    </a>
+                                <div className='flex items-center col-span-1'>
+                                    <img className='object-contain w-16 cursor-pointer hover:brightness-75' src={process.env.PUBLIC_URL + '/images/education/citeforma.png'} alt="" onClick={() => window.open('https://www.citeforma.pt/', '_blank')} />
                                 </div>
                                 <div className='flex flex-col justify-center col-span-11'>
                                     <h3 className="text-lg font-semibold text-white">Citeforma - Specialist Technician in Information Systems Technologies and Programming - CET</h3>
@@ -123,10 +113,8 @@ const Carreer = () => {
                             <div className="absolute w-3 h-3 rounded-full mt-1.5 -left-1.5 border border-gray-900 bg-gray-400"></div>
                             <time className="mb-1 text-sm font-normal leading-none text-gray-200">September 2019 - July 2022</time>
                             <div className='grid grid-cols-12 gap-x-2'>
-                                <div className='flex col-span-1'>
-                                    <a href='https://casapia.pt/' target='_blank'>
-                                        <img className='object-contain w-14' src={process.env.PUBLIC_URL + '/images/education/casapia.png'} alt="" />
-                                    </a>
+                                <div className='flex items-center col-span-1'>
+                                    <img className='object-contain cursor-pointer w-14 hover:brightness-75' src={process.env.PUBLIC_URL + '/images/education/casapia.png'} alt="" onClick={() => window.open('https://casapia.pt/', '_blank')} />
                                 </div>
                                 <div className='flex flex-col justify-center col-span-11'>
                                     <h3 className="text-lg font-semibold text-white">Casa Pia de Lisboa - Computer Systems Technician - 12th grade</h3>
