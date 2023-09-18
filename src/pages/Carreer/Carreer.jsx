@@ -1,9 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BsArrowLeft } from 'react-icons/bs';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
-const Home = () => {
-
+const Carreer = () => {
+    const navigate = useNavigate();
+    const handleKeyDown = (e) => {
+        if (e.keyCode === 37) { // Left arrow key
+            navigate("/main");
+        }
+    };
+    useEffect(() => {
+        document.addEventListener('keydown', handleKeyDown);
+        return () => {
+            //Remove the key listener
+            document.removeEventListener('keydown', handleKeyDown);
+        };
+    }, []);
+    
     return (
         <>
             <main className='flex flex-col min-h-screen bg-slate-950'>
@@ -131,4 +144,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Carreer;

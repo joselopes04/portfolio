@@ -7,7 +7,7 @@ import Home from './pages/Home/Home';
 import MainPage from "./pages/MainPage/MainPage";
 import Skills from "./pages/Skills/Skills";
 import Carreer from "./pages/Carreer/Carreer";
-import Projects from "./Projects/Projects";
+import Projects from "./pages/Projects/Projects";
 
 function App() {
   return (
