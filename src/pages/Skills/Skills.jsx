@@ -59,7 +59,7 @@ const Skills = () => {
                             <progress className="w-56 progress progress-success" value="20" max="100"></progress>
                         </div>
                     </div>
-                    <div className='flex flex-col mx-auto'>
+                    <div className='flex flex-col mx-auto mt-8 sm:mt-0'>
                         <h2 className='text-2xl text-white'>Databases</h2>
                         <div className='mt-4'>
                             <p className='text-white'>MySQL</p>
@@ -74,7 +74,7 @@ const Skills = () => {
                             <progress className="w-56 progress progress-success" value="10" max="100"></progress>
                         </div>
                     </div>
-                    <div className='flex flex-col mx-auto'>
+                    <div className='flex flex-col mx-auto mt-8 sm:mt-0'>
                         <h2 className='text-2xl text-white'>Frameworks</h2>
                         <div className='mt-4'>
                             <p className='text-white'>Bootstrap</p>

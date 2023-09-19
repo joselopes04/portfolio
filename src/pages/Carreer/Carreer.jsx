@@ -28,7 +28,7 @@ const Carreer = () => {
 
                 <h1 className='mt-8 mb-4 text-4xl tracking-wide text-center text-white'>Working Experiences👨🏻‍💻</h1>
                 <div className='flex items-center justify-center max-w-3xl mx-auto mb-10'>
-                    <ol className="relative border-l :border-gray-700">
+                    <ol className="relative mx-4 border-l border-gray-700 sm:mx-0">
                         <li className="mb-10 ml-4">
                             <div className="absolute w-3 h-3 rounded-full mt-1.5 -left-1.5 border border-gray-900 bg-gray-400"></div>
                             <time className="mb-1 text-sm font-normal leading-none text-gray-200">August 2023 - Present</time>
@@ -92,7 +92,7 @@ const Carreer = () => {
                 </div>
                 <h1 className='mt-8 mb-4 text-4xl tracking-wide text-center text-white'>Education🎓</h1>
                 <div className='flex items-center justify-center max-w-3xl mx-auto mb-10'>
-                    <ol className="relative border-l border-gray-700">
+                    <ol className="relative mx-4 border-l border-gray-700 sm:mx-0">
                         <li className="mb-10 ml-4">
                             <div className="absolute w-3 h-3 rounded-full mt-1.5 -left-1.5 border border-gray-900 bg-gray-400"></div>
                             <time className="mb-1 text-sm font-normal leading-none text-gray-200">October 2022 - August 2023</time>
