@@ -24,7 +24,7 @@ const Projects = () => {
                 <div className="flex flex-col items-center">
                     <Link className='absolute z-10 top-5 group' to={"/main"}>
                         <button className="z-10 flex items-center p-3 transition-transform select-none rounded-2xl text-slate-950 bg-gradient-to-br from-green-200 to-emerald-500 group-hover:from-cyan-500 group-hover:to-blue-500">
-                            <BsArrowUp className='2xl:ml-1' /><span className='hidden 2xl:block'>Back</span>
+                            <BsArrowUp className='2xl:ml-1' /><span className='hidden xl:block'>Back</span>
                         </button>
                     </Link>
                     <div className='w-full mt-24'>
