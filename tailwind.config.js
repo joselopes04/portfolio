@@ -8,6 +8,9 @@ module.exports = {
         'console-yellow': '#e6c02a',
         'console-green': '#53c22b',
       },
+      screens: {
+        'xs': '300px',
+      },
     },
   },
   plugins: [require("daisyui")],

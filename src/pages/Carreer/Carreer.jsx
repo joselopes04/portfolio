@@ -22,13 +22,13 @@ const Carreer = () => {
             <main className='flex flex-col min-h-screen bg-slate-950'>
                 <Link className='absolute z-10 flex items-center h-screen left-5 group' to={"/main"}>
                     <button className="z-10 flex items-center p-3 transition-transform select-none rounded-2xl text-slate-950 bg-gradient-to-br from-green-200 to-emerald-500 group-hover:from-cyan-500 group-hover:to-blue-500">
-                        <BsArrowLeft className='mr-1' />Back
+                        <BsArrowLeft className='2xl:ml-1' /><span className='hidden 2xl:block'>Back</span>
                     </button>
                 </Link>
 
                 <h1 className='mt-8 mb-4 text-4xl tracking-wide text-center text-white'>Working Experiences👨🏻‍💻</h1>
                 <div className='flex items-center justify-center max-w-3xl mx-auto mb-10'>
-                    <ol className="relative mx-4 border-l border-gray-700 sm:mx-0">
+                    <ol className="relative mx-4 border-l border-gray-700 lg:mx-0">
                         <li className="mb-10 ml-4">
                             <div className="absolute w-3 h-3 rounded-full mt-1.5 -left-1.5 border border-gray-900 bg-gray-400"></div>
                             <time className="mb-1 text-sm font-normal leading-none text-gray-200">August 2023 - Present</time>
