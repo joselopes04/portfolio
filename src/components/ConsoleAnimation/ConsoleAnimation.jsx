@@ -28,7 +28,7 @@ const ConsoleAnimation = ({ words, classes }) => {
                 }
                 return prevLetterCount;
             });
-        }, 150);
+        }, 100);
 
         return () => {
             clearInterval(interval);
@@ -50,7 +50,7 @@ const ConsoleAnimation = ({ words, classes }) => {
     }, []);
 
     return (
-        <div className='console-container flex'>
+        <div className='flex console-container'>
             <span id='text' className={classes}>
                 {currentWord.substring(0, letterCount)}
             </span>

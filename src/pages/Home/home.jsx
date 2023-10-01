@@ -31,9 +31,12 @@ const Home = () => {
                             <h1 className="text-6xl text-center select-none">José T. Lopes</h1>
                         </div>
                     </div>
-                    <div className="relative z-10 mb-10 md:ml-16 md:mb-0">
+                    <Link className="relative z-10 mb-10 cursor-pointer md:ml-16 md:mb-0 group" to={"/AboutMe"}>
                         <img className="h-64 shadow-2xl select-none rounded-3xl" src={process.env.PUBLIC_URL + '/images/eu.jpg'} alt="José T. Lopes" />
-                    </div>
+                        <div className="absolute inset-0 items-center justify-center hidden bg-black rounded-3xl bg-opacity-60 group-hover:flex">
+                            <p className="ml-2 text-xl font-bold text-white">About me</p>
+                        </div>
+                    </Link>
                 </div>
                 <Link className='absolute z-10 bottom-1 group' to={"/main"}>
                     <button className="transition-transform button animate-bounce">
@@ -42,7 +45,6 @@ const Home = () => {
                 </Link>
             </main>
         </>
-
     );
 };
 export default Home;

@@ -8,6 +8,7 @@ import MainPage from "./pages/MainPage/MainPage";
 import Skills from "./pages/Skills/Skills";
 import Carreer from "./pages/Carreer/Carreer";
 import Projects from "./pages/Projects/Projects";
+import AboutMe from "./pages/AboutMe/AboutMe";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/stats' exact element={<Skills/>}/>
         <Route path='/carreer' exact element={<Carreer/>}/>
         <Route path='/projects' exact element={<Projects/>}/>
+        <Route path='/aboutMe' exact element={<AboutMe/>}/>
       </Routes>
     </div>
   );
